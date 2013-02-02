@@ -77,7 +77,7 @@ function nkthemeswitch( $current, $pass = 'Template' ) {
 	
 			// Enough permissions?
 			if ( nkthemeswitch_check_permissions( $option ) ) {
-				$theme = get_theme( $theme );
+				$theme = wp_get_theme( $theme );
 				
 				// valid theme?
 				if ( !empty( $theme ) ) {
