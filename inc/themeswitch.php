@@ -46,6 +46,10 @@ function nkthemeswitch_check_cookie() {
 	}
 }
 
+function nkthemeswitch_get_cookie() {
+	return $_COOKIE['nkthemeswitch' . COOKIEHASH];
+}
+
 /**
  * The core. Switch theme if cookie present + permission granted.
  *
